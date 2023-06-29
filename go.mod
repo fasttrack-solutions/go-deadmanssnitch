@@ -1,3 +1,3 @@
-module github.com/PremiereGlobal/go-deadmanssnitch
+module github.com/fasttrack-solutions/go-deadmanssnitch
 
 go 1.20
