@@ -18,11 +18,7 @@ type Client struct {
 }
 
 // NewClient creates a new API client
-func NewClient(apiKey string, httpClient *http.Client) *Client {
-
-	if httpClient == nil {
-		httpClient = &http.Client{}
-	}
+func NewClient(apiKey string) *Client {
 
 	client := &Client{
 		httpClient: &http.Client{},
@@ -31,4 +27,8 @@ func NewClient(apiKey string, httpClient *http.Client) *Client {
 	}
 
 	return client
+}
+
+func (c *Client) SetEndpoint(endpoint string) {
+	c.apiBaseURL = endpoint
 }

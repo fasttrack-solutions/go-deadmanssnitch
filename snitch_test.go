@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/PremiereGlobal/go-deadmanssnitch"
+	"github.com/fasttrack-solutions/go-deadmanssnitch"
 )
 
 var apiKey string
